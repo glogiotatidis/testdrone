@@ -14,3 +14,4 @@ publish:
     username: $$DOCKER_USERNAME
     password: $$DOCKER_PASSWORD
     image_name: dronetest
+    docker_host: unix:///var/run/docker.sock
