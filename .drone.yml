@@ -1,4 +1,3 @@
-image: giorgos/docker-in-docker
+image: giorgos/droneio-test-runner
 script:
-  - env
   - ./build.sh
