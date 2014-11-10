@@ -5,5 +5,8 @@ cd $DRONE_BUILD_DIR
 wrapdocker &  
 sleep 5
 
+docker login -e $DOCKER_EMAIL -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
 docker build -t giorgos/test-drone .  
 docker push giorgos/test-drone
+
+fig -f ci-fig.yml up
