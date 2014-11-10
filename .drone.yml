@@ -8,3 +8,9 @@ notify:
   email:
     recipients:
       - seadog@sealabs.net
+publish:
+  docker:
+    dockerfile: Dockerfile
+    username: $$DOCKER_USERNAME
+    password: $$DOCKER_PASSWORD
+    image_name: dronetest
