@@ -1,17 +1,3 @@
-image: bradrydzewski/python:2.7
+image: giorgos/docker-in-docker
 script:
-  - env
-  - python test.py
-services:
-  - mysql
-notify:
-  email:
-    recipients:
-      - seadog@sealabs.net
-publish:
-  docker:
-    dockerfile: Dockerfile
-    username: $$DOCKER_USERNAME
-    password: $$DOCKER_PASSWORD
-    image_name: dronetest
-    docker_host: unix:///var/run/docker.sock
+  - build.sh
