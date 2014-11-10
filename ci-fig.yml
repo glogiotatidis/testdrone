@@ -1,5 +1,5 @@
 app:
-  image: giorgos/muffin:DRONE_TAG
+  image: giorgos/oooo:99
   environment:
     - DATABASE_URL=sqlite:///foo.db
     - SECRET_KEY=bar
