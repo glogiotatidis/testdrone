@@ -1,5 +1,6 @@
 image: .
 script:
+  - env
   - python test.py
 notify:
   email:
